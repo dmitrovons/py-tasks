@@ -37,7 +37,26 @@ def Method_2(aMonthNo):
     else:
         print ('%s is not a valid month' % (aMonthNo))
 
+def Method_3(aMonthNo):
+    Year = {
+        1:  'winter. Jan',
+        2:  'winter, Fef',
+        3:  'Spring. Mar',
+        4:  'Spring. Apr',
+        5:  'Spring. May',
+        6:  'Summer. Jun', 
+        7:  'Summer. Jul', 
+        8:  'Summer. Aug', 
+        9:  'Autumn. Sep',
+        10: 'Autumn. Oct',
+        11: 'Autumn. Nov',
+        12: 'Autumn. Dec'
+    }
+    Season = Year.get(aMonthNo, 'Not a valid month %s' % aMonthNo) 
+    print('%s (%s)' % (Season, aMonthNo)) 
+ 
 
 #Method_1(13)
-Method_2(1)
+#Method_2(1)
+Method_3(4)
 
