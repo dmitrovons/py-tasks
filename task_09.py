@@ -52,7 +52,7 @@ def Method_3(aMonthNo):
         11: 'Autumn. Nov',
         12: 'Autumn. Dec'
     }
-    Season = Year.get(aMonthNo, 'Not a valid month %s' % aMonthNo) 
+    Season = Year.get(aMonthNo, 'Not a valid month') 
     print('%s (%s)' % (Season, aMonthNo)) 
  
 
